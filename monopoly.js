@@ -10,8 +10,8 @@ function Game() {
 	var auctionproperty;
 
 	this.rollDice = function() {
-		die1 = Math.floor(Math.random() * 6) + 1;
-		die2 = Math.floor(Math.random() * 6) + 1;
+		die1 = Math.floor(Math.random() * 20) + 1;
+		die2 = Math.floor(Math.random() * 20) + 1;
 		areDiceRolled = true;
 	};
 
@@ -1879,8 +1879,8 @@ function advance(destination, pass) {
 			p.position = pass;
 		} else {
 			p.position = pass;
-			p.money += 200;
-			addAlert(p.name + " collected a $200 salary for passing GO.");
+			p.money += 75;
+			addAlert(p.name + " collected a $75 salary for passing GO.");
 		}
 	}
 	if (p.position < destination) {
